@@ -15,61 +15,202 @@ def conect():
         "size": 100,
         "query": {
             "bool": {
-                "must": [
+                "must_not": [
                     {
                         "multi_match": {
                             "query": "điện tử",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "50%"
+                           
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "đèn, đèn chiếu sáng",
+                            "query": "đèn",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "50%"
+                         
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "tivi, tủ lạnh, máy giặt",
+                            "query": "tivi",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "25%"
+                       
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "phòng ngủ, phòng khách, nhà bếp, phòng bếp",
+                            "query": "tủ lạnh",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "25%"
+                       
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "điều hoà, quạt, lò vi sóng",
+                            "query": "máy giặt",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "20%"
+                       
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "samsung, sony, lg, toshiba, Sunhouse, Kangaroo, Bluestone, Asanzo",
+                            "query": "phòng ngủ",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "20%"
+                 
                         }
                     },
                     {
                         "multi_match": {
-                            "query": "gia đình, sinh hoạt, tiêu dùng",
+                            "query": "phòng bếp",
                             "fields": ["_all"],
                             "type": "phrase",
-                            "minimum_should_match": "25%"
+                 
+                        }
+                    },
+                    {
+                        "multi_match": {
+                            "query": "nhà bếp",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                 
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "điều hoà",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "quạt",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "lò vi sóng",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "samsung",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "sony",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "lg",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "toshiba",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "Sunhouse",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "Kangaroo",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "Bluestone",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+                    {
+                        "multi_match": {
+                            "query": "Asanzo",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                
+                        }
+                    },
+
+
+
+
+
+
+                    {
+                        "multi_match": {
+                            "query": "gia đình",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
+                        }
+                    },
+
+
+                    {
+                        "multi_match": {
+                            "query": "sinh hoạt",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
+                        }
+                    },
+
+
+                    {
+                        "multi_match": {
+                            "query": "tiêu dùng",
+                            "fields": ["_all"],
+                            "type": "phrase",
+                      
                         }
                     },
 
