@@ -12,7 +12,7 @@ def conect():
     else:
         print('Awww it could not connect!')
     search_object = {
-        "size": 5000,
+        "size": 100,
         "query": {
             "bool": {
                 "must": [
