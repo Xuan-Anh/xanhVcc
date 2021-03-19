@@ -96,95 +96,95 @@ class DataCollector:
                             }
                         },
 
-                        {
-                            "multi_match": {
-                                "query": "quạt",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "quạt",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "lò vi sóng",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "lò vi sóng",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "samsung",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "samsung",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "sony",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "sony",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "lg",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "lg",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "toshiba",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "toshiba",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "Sunhouse",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "Sunhouse",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "Kangaroo",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "Kangaroo",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "Bluestone",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "Bluestone",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
-                        {
-                            "multi_match": {
-                                "query": "Asanzo",
-                                "fields": ["_all"],
-                                "type": "phrase",
+#                         {
+#                             "multi_match": {
+#                                 "query": "Asanzo",
+#                                 "fields": ["_all"],
+#                                 "type": "phrase",
 
-                            }
-                        },
+#                             }
+#                         },
 
 
 
