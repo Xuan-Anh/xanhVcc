@@ -1,6 +1,6 @@
 from elasticsearch import Elasticsearch
 import json
-HOST = '10.3.70.221'
+# HOST = '10.3.70.221'
 
 
 def conect():
@@ -12,7 +12,7 @@ def conect():
     else:
         print('Awww it could not connect!')
     search_object = {
-        "size": 100,
+        "size": 10000,
         "query": {
             "bool": {
                 "must_not": [
@@ -32,187 +32,187 @@ def conect():
                          
                         }
                     },
-                    {
-                        "multi_match": {
-                            "query": "tivi",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "tivi",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                        
-                        }
-                    },
-                    {
-                        "multi_match": {
-                            "query": "tủ lạnh",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    #     }
+                    # },
+                    # {
+                    #     "multi_match": {
+                    #         "query": "tủ lạnh",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                        
-                        }
-                    },
-                    {
-                        "multi_match": {
-                            "query": "máy giặt",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    #     }
+                    # },
+                    # {
+                    #     "multi_match": {
+                    #         "query": "máy giặt",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                        
-                        }
-                    },
-                    {
-                        "multi_match": {
-                            "query": "phòng ngủ",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    #     }
+                    # },
+                    # {
+                    #     "multi_match": {
+                    #         "query": "phòng ngủ",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                  
-                        }
-                    },
-                    {
-                        "multi_match": {
-                            "query": "phòng bếp",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    #     }
+                    # },
+                    # {
+                    #     "multi_match": {
+                    #         "query": "phòng bếp",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                  
-                        }
-                    },
-                    {
-                        "multi_match": {
-                            "query": "nhà bếp",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    #     }
+                    # },
+                    # {
+                    #     "multi_match": {
+                    #         "query": "nhà bếp",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                  
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "điều hoà",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "điều hoà",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "quạt",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "quạt",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "lò vi sóng",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "lò vi sóng",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "samsung",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "samsung",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "sony",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "sony",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "lg",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "lg",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "toshiba",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "toshiba",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "Sunhouse",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "Sunhouse",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "Kangaroo",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "Kangaroo",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "Bluestone",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "Bluestone",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
-                    {
-                        "multi_match": {
-                            "query": "Asanzo",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "Asanzo",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                 
-                        }
-                    },
+                    #     }
+                    # },
 
 
 
 
 
 
-                    {
-                        "multi_match": {
-                            "query": "gia đình",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "gia đình",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
 
-                    {
-                        "multi_match": {
-                            "query": "sinh hoạt",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "sinh hoạt",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
 
-                    {
-                        "multi_match": {
-                            "query": "tiêu dùng",
-                            "fields": ["_all"],
-                            "type": "phrase",
+                    # {
+                    #     "multi_match": {
+                    #         "query": "tiêu dùng",
+                    #         "fields": ["_all"],
+                    #         "type": "phrase",
                       
-                        }
-                    },
+                    #     }
+                    # },
 
                 ]
             }
