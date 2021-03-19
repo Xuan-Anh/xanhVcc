@@ -21,7 +21,7 @@ class DataCollector:
             "size": 10000,
             "query": {
                 "bool": {
-                    "should": [
+                    "must_not": [
                         {
                             "multi_match": {
                                 "query": "điện tử",
