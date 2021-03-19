@@ -220,7 +220,7 @@ def conect():
     }
     search_object = json.dumps(search_object)
     #res = elastic_client.search(index=-7823841914345959386)
-    f = open('data_for_none_class.txt', 'w+')
+    f = open('data_must_not.txt', 'w+')
     for i in range(1, 13, 1):
         if(i < 10):
             index_value = 'urldata_2020_0' + str(i)
