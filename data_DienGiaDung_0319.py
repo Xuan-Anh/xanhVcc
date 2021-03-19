@@ -235,6 +235,8 @@ class DataCollector:
         
         result.to_csv(raw_output_file)
 
+dataxa = DataCollector()
+dataxa.collect()
 
 # data = [{
         # "_index": "urldata_2020_02",
