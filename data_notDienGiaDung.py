@@ -18,7 +18,7 @@ class DataCollector:
         else:
             print('Awww it could not connect!')
         search_object = {
-            "size": 1000,
+            "size": 10000,
             "query": {
                 "bool": {
                     "must_not": [
